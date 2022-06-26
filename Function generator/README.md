@@ -1,7 +1,7 @@
 # Functional generator based on operational amplifiers
 https://everycircuit.com/circuit/6253211932164096
 ![final scheme](https://user-images.githubusercontent.com/24607459/175829432-e2b665b3-46ee-44b6-8238-fa08ad03942b.PNG)
-press button (or shake your mobile device) to initialize occilations. Amplitude will obtain 5 volts.
+press button (or shake your mobile device) to initialize occilations. Amplitude will obtain 4 volts.
 =====================================================================================================================
 
 
@@ -19,6 +19,10 @@ As we can see on picture above:
 
 There is a problem: amplitude and phase are not fixed, so amplitude could change randomly. We need to add another feedback loop to regulate amplitude. One of possible solutions:
 ![full functional scheme](https://user-images.githubusercontent.com/24607459/175820813-78457d37-1f09-43cf-bfeb-000df90c3e36.PNG)
+
+<img src="https://latex.codecogs.com/svg.image?\mathrm{Now:}\:x(t)=-\ddot{x}(t)&plus;(At-A)\cdot&space;\dot{x}(t),\\\mathrm{Where\:A-current\:amplitude;\:At-target\:amplitude}\\\mathrm{If}\:A=At:\:x(t)=-\ddot{x}(t);\\\mathrm{If}\:A>At:\:x(t)=-\ddot{x}(t)-a\cdot&space;\dot{x}(t)\:(\mathrm{damping\:occillations});\\\mathrm{If}\:A<At:\:x(t)=-\ddot{x}(t)&plus;a\cdot&space;\dot{x}(t)\:(\mathrm{increasing\:occillations});&space;"/>
+
+
 
 https://everycircuit.com/circuit/6253211932164096
 ![final scheme](https://user-images.githubusercontent.com/24607459/175829432-e2b665b3-46ee-44b6-8238-fa08ad03942b.PNG)
